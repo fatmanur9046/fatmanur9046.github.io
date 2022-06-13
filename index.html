@@ -137,7 +137,7 @@
     <script>
        function indir(){
       var employees = [
-        {"AD_SOYAD":"Fatma Nur KOSUM","Yas":"19","BOLUMU":"Yazilim muhendisliği","A1":"JAVA","A2":"WEB","i1":"fatmanur@gmail.com","i2":"0537000000","i3":"github.com/fatmanur9046"}
+        {"AD_SOYAD":"Fatma Nur KOSUM","Yas":"19","BOLUMU":"Yazilim muhendisligi","A1":"JAVA","A2":"WEB","i1":"fatmanur@gmail.com","i2":"0537000000","i3":"github.com/fatmanur9046"}
       
 ];
  
@@ -146,7 +146,7 @@
     var doc = new jsPDF();
     employees.forEach(function(employees, i){
         doc.text(50, 10 + (i * 10),
-        "AD SOYAD:" + employees.AD_SOYAD+"\n"+"Yas"+ employees.Yas+"\n\n"+"Bolum:"+employees.BOLUMU+"\n\n"+"Arastirma Alanlari"+"\n"+employees.A1+"\n"+employees.A2+"\n\n"+"\n\n"+"iletisim bilgilerim"+"\n"+"E-MAIL"+"\n"+employees.i1+"\n"+"Telefon:"+employees.i2+"\n"+"Github:"+"\n"+employees.i3+"\n")
+        "AD SOYAD:" + employees.AD_SOYAD+"\n"+"Yas:"+ employees.Yas+"\n\n"+"Bolum:"+employees.BOLUMU+"\n\n"+"Arastirma Alanlari"+"\n"+employees.A1+"\n"+employees.A2+"\n\n"+"\n\n"+"iletisim bilgilerim"+"\n"+"E-MAIL"+"\n"+employees.i1+"\n"+"Telefon:"+employees.i2+"\n"+"Github:"+"\n"+employees.i3+"\n")
 });
     
     doc.save('CV.pdf');
